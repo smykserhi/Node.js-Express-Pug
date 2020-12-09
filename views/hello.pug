@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Fleshcard    
+        form(action="/hello" method="post")
+            label(for="name") Name
+                input(type="text" name="name" id='name') 
+            button(type="submit") submit
+    

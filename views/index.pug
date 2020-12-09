@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    if name
+        h2 Hello #{name}
+        form(action="/clear" method="post")
+            button(type="submit") Clear
+    else 
+        h2 Hello new student
+    

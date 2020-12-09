@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= text
+    if hint
+        p
+            i Hint: #{hint}
+        a(href='//google.com') Answer
+    else 
+        a(href='//google.com') Question
